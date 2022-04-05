@@ -17,6 +17,11 @@ message RegisterRequest {
     string password = 2;
 }
 
+message RegisterResponse{
+    int64 status = 1;
+    string error = 2;
+}
+
 // Login
 
 message LoginRequest{
@@ -39,3 +44,4 @@ message ValidateResponse {
     string error = 2;
     int64 userId = 3;
 }
+
